@@ -1,0 +1,166 @@
+    label {
+        font-size: 50px;  
+    }
+
+    strong {
+        font-size: 16px;
+
+    }
+
+    .container {
+        border-top: 2px solid black; 
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        width: 100%; 
+        display: flex; /* ใช้ flexbox */
+        position: relative;
+
+    }
+
+    .container-top {
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        /* padding-bottom: 12px; */
+        width: 100%;  
+        display: flex; /* ใช้ flexbox */
+
+    }
+
+    .container-right {
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        padding: 7px 10px;
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .containers {
+        display: flex; /* ใช้ Flexbox */
+        justify-content: space-between; /* กระจายกล่องให้ซ้ายและขวา */
+        gap: 10px; /* ระยะห่างระหว่างคอลัมน์ */
+    }
+
+    .col-6 {
+        width: 40%;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    /* ตั้งค่าคอนเทนเนอร์ให้แบ่งพื้นที่เป็น 2 คอลัมน์ */
+    .container {
+        display: flex; /* ใช้ flexbox */
+        width: 100%;   /* ให้พื้นที่เต็มหน้ากระดาษ */
+    }
+
+    .cols-8 {
+        width: 55%;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .cols-7 {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .cols-6 {
+        width: 46%;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .cols-s-6 {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .cols-12 {
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .cols-2 {
+        width: 15%;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .cols-1 {
+        width: 10%;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .cols-3 {
+        width: 20%;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .cols-4 {
+        width: 30%;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap; /* ให้มีการขึ้นบรรทัดใหม่เมื่อพื้นที่ไม่พอ */
+        margin-left: -15px; /* เพิ่มระยะห่างระหว่างคอลัมน์ */
+        margin-right: -15px;
+    }
+
+    .col {
+        padding-left: 15px;
+        padding-right: 15px;
+        flex: 1 0 0%; /* คอลัมน์ขยายเต็มที่ */
+        max-width: 100%; /* กำหนดให้คอลัมน์ไม่เกิน 100% */
+    }
+
+    .dotted-line {
+        display: inline-block; /* ใช้ inline-block เพื่อให้ขยายตามความยาวของข้อความ */
+        border-bottom: 1px dotted #000; /* เส้นล่างแบบจุด */
+        width: 100%; /* กำหนดความกว้าง 100% หรือปรับตามต้องการ */
+        margin-bottom: 15px; /* เพิ่มระยะห่างระหว่างเส้น */
+        margin-top: 10px; /* เพิ่มระยะห่างระหว่างเส้น */
+
+    }
+
+    .dotted-line-label {
+        display: block; /* ใช้ block สำหรับข้อความก่อนเส้น */
+        margin-bottom: 15px; /* เพิ่มระยะห่างระหว่างข้อความกับเส้น */
+    }
+
+    .font-strong {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 110px;
+        height: auto;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .column-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 คอลัมน์ */
+        gap: 10px; /* ระยะห่างระหว่างคอลัมน์ */
+        justify-items: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
+    }
+
+    .big-text {
+        font-size: 16px;
+    }
+

@@ -1,0 +1,526 @@
+/* ปุ่มเหลือง */
+.custom-cardwarning:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffc107; /* เปลี่ยนพื้นหลังของการ์ดเมื่อ hover */
+    color: #fff; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgb(197, 225, 255); /* ฟ้าสดใสที่เด่นขึ้น */
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* เปลี่ยนแปลงด้วยการแปลงที่นุ่ม */
+}
+
+.custom-cardwarning:hover .info-box-icon {
+    background-color: #ffffff; /* เปลี่ยนพื้นหลังของไอคอนเป็นสีขาว */
+}
+
+
+.custom-cardwarning:hover .info-box-icon i {
+    color: #ffc107;  /* เปลี่ยนสีของไอคอนให้เป็นขาว */
+    
+}
+
+.custom-cardwarning.active {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffc107; /* เปลี่ยนพื้นหลังของการ์ดเมื่อ hover */
+    color: #fff; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgb(197, 225, 255); /* ฟ้าสดใสที่เด่นขึ้น */
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* เปลี่ยนแปลงด้วยการแปลงที่นุ่ม */
+}
+
+.custom-cardwarning.active .info-box-icon {
+    background-color: #ffffff; /* เปลี่ยนพื้นหลังของไอคอนเป็นสีขาว */
+}
+
+
+.custom-cardwarning.active .info-box-icon i {
+    color: #ffc107;  /* เปลี่ยนสีของไอคอนให้เป็นขาว */
+    
+}
+
+.bg-warning-custom {
+    background-color: #ffc107;
+    color: #fff;
+
+}
+
+/* ปุ่มเขียว */
+.custom-cardsuccess:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #28a745; /* เปลี่ยนพื้นหลังของการ์ดเมื่อ hover */
+    color: #fff; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgb(197, 225, 255); /* ฟ้าสดใสที่เด่นขึ้น */
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* เปลี่ยนแปลงด้วยการแปลงที่นุ่ม */
+}
+
+.info-box-icon i {
+    color: #ffffff;
+}
+
+.custom-cardsuccess:hover .info-box-icon {
+    background-color: #ffffff; /* เปลี่ยนพื้นหลังของไอคอนเป็นสีขาว */
+
+}
+
+.custom-cardsuccess:hover .info-box-icon i {
+    color: #28a745;  /* เปลี่ยนสีของไอคอนให้เป็นขาว */
+    
+}
+
+.custom-cardsuccess.active {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #28a745; /* เปลี่ยนพื้นหลังของการ์ดเมื่อ hover */
+    color: #fff; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgb(197, 225, 255); /* ฟ้าสดใสที่เด่นขึ้น */
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* เปลี่ยนแปลงด้วยการแปลงที่นุ่ม */
+}
+
+.custom-cardsuccess.active .info-box-icon {
+    background-color: #ffffff; /* เปลี่ยนพื้นหลังของไอคอนเป็นสีขาว */
+
+}
+
+.custom-cardsuccess.active .info-box-icon i {
+    color: #28a745;  
+}
+
+
+.bg-success-custom {
+    background-color: #28a745;
+    color: #000000;
+}
+
+/* ปุ่มส้ม */
+.custom-cardorange:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fd7e14; /* เปลี่ยนพื้นหลังของการ์ดเมื่อ hover */
+    color: #fff; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgb(197, 225, 255); /* ฟ้าสดใสที่เด่นขึ้น */
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* เปลี่ยนแปลงด้วยการแปลงที่นุ่ม */
+}
+
+.custom-cardorange:hover .info-box-icon {
+    background-color: #ffffff; /* เปลี่ยนพื้นหลังของไอคอนเป็นสีขาว */
+}
+
+.custom-cardorange:hover .info-box-icon i {
+    color: #fd7e14;  /* เปลี่ยนสีของไอคอนให้เป็นขาว */
+    
+}
+
+.custom-cardorange.active {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fd7e14; /* เปลี่ยนพื้นหลังของการ์ดเมื่อ hover */
+    color: #fff; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgb(197, 225, 255); /* ฟ้าสดใสที่เด่นขึ้น */
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* เปลี่ยนแปลงด้วยการแปลงที่นุ่ม */
+}
+
+.custom-cardorange.active .info-box-icon {
+    background-color: #ffffff; /* เปลี่ยนพื้นหลังของไอคอนเป็นสีขาว */
+}
+
+.custom-cardorange.active .info-box-icon i {
+    color: #fd7e14;  /* เปลี่ยนสีของไอคอนให้เป็นขาว */
+    
+}
+
+.bg-orange-custom {
+    background-color: #fd7e14;
+    color: #fff;
+
+}
+
+/* ปุ่มแดง */
+.custom-carddanger:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #dc3545; /* เปลี่ยนพื้นหลังของการ์ดเมื่อ hover */
+    color: #fff; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgb(197, 225, 255); /* ฟ้าสดใสที่เด่นขึ้น */
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* เปลี่ยนแปลงด้วยการแปลงที่นุ่ม */
+}
+
+.custom-carddanger:hover .info-box-icon {
+    background-color: #ffffff; /* เปลี่ยนพื้นหลังของไอคอนเป็นสีขาว */
+}
+
+.custom-carddanger:hover .info-box-icon i {
+    color: #dc3545;  /* เปลี่ยนสีของไอคอนให้เป็นขาว */
+    
+}
+
+.custom-carddanger.active {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #dc3545; /* เปลี่ยนพื้นหลังของการ์ดเมื่อ hover */
+    color: #fff; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgb(197, 225, 255); /* ฟ้าสดใสที่เด่นขึ้น */
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* เปลี่ยนแปลงด้วยการแปลงที่นุ่ม */
+}
+
+.custom-carddanger.active .info-box-icon {
+    background-color: #ffffff; /* เปลี่ยนพื้นหลังของไอคอนเป็นสีขาว */
+}
+
+.custom-carddanger.active .info-box-icon i {
+    color: #dc3545;  /* เปลี่ยนสีของไอคอนให้เป็นขาว */
+    
+}
+
+.bg-danger-custom {
+    background-color: #dc3545;
+    color: #fff;
+
+}
+
+.info-box-text {
+    user-select: none;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+    margin-top: 10px;
+    flex-wrap: wrap; /* ✅ เพิ่มบรรทัดใหม่เมื่อเนื้อหายาวเกิน */
+}
+
+
+.circle-icon {
+    width: 30px;               /* ขนาดของวงกลม */
+    height: 30px;              /* ขนาดของวงกลม */
+    border-radius: 50%;        /* ทำให้เป็นวงกลม */
+    display: flex;             /* ใช้ Flexbox เพื่อจัดตำแหน่งไอคอนภายในวงกลม */
+    align-items: center;       /* จัดแนวตั้งไอคอน */
+    justify-content: center;   /* จัดแนวนอนไอคอน */
+    font-size: 14px;           /* ขนาดไอคอน */
+    border: 2px solid #4CAF50; /* ขอบวงกลม (สีเขียว) */
+    color: #4CAF50;            /* สีไอคอนให้ตรงกับขอบ */
+    cursor: pointer;
+}
+
+.circle-icon i {
+    font-size: 20px;           /* ขนาดไอคอน */
+}
+
+.fa-check {
+    color: green;              /* สีสำหรับติ๊กถูก */
+}
+
+.fa-times {
+    color: red;                /* สีสำหรับติ๊กผิด */
+}
+
+.fa-arrow-right {
+    font-size: 15px;           /* ขนาดของไอคอนลูกศร */
+}
+
+.card.shadow-md {
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+}
+
+.card.shadow-md:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Gradient backgrounds for different states with slightly stronger colors */
+.card-danger .custom-header { 
+    background: linear-gradient(135deg, #ff4c4c, #e74c3c);
+
+}
+.card-success .custom-header { 
+    background: linear-gradient(135deg, #66bb6a, #43a047);
+
+}
+.card-warning .custom-header {
+    background: linear-gradient(135deg, #ffd829, #fbc02d);
+
+}
+.card-orange .custom-header { 
+    background: linear-gradient(135deg, #ff9800, #fb8c00);
+
+}
+
+
+
+.custom-body {
+    padding: 1.5rem;
+    background: #fff;
+}
+
+.card-tools .btn-delete {
+    background: transparent;
+    border: none;
+    padding: 0.25rem;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.card-tools .btn-delete:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.1);
+}
+
+.property-row {
+    margin-bottom: 1rem;
+}
+
+.property-label {
+    color: #6c757d;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.property-value {
+    font-weight: 500;
+    color: #2d3436;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    margin: 1rem 0;
+}
+
+.status-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    font-size: 0.850rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: fit-content;  /* 🔹 ขนาดตามเนื้อหา */
+    white-space: nowrap;     /* 🔹 ป้องกันขึ้นบรรทัดใหม่ */
+    flex-shrink: 0;          /* 🔹 ป้องกันการบีบตัว */
+}
+
+
+.card-danger .status-badge { background: rgba(220, 53, 69, 0.1); }
+.card-success .status-badge { background: rgba(40, 167, 69, 0.1); }
+.card-warning .status-badge { background: rgba(255, 193, 7, 0.1); }
+.card-orange .status-badge { background: rgba(253, 126, 20, 0.1); }
+
+.card-footer {
+    border-radius: 0 0 12px 12px;
+    padding: 1rem 1.5rem;
+    background: #f8f9fa !important;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.btn-action {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.btn-action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.staff-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.staff-info i {
+    font-size: 1.25rem;
+}
+
+.card-outline {
+    border-width: 3px; /* เพิ่มความหนาของขอบ */
+    /* ไม่กำหนดสีขอบที่นี่ เนื่องจาก Bootstrap จะจัดการสีขอบตามคลาส card-success */
+}
+
+/* card-success */
+.card-success {
+    background-color: #f8fff7; /* สีพื้นหลังอ่อนมาก (เขียวอ่อนใกล้ขาว) */
+    border-color: #28a745; /* สีขอบของ card (เขียวเข้ม) */
+}
+
+/* card-warning */
+.card-warning {
+    background-color: #fffef8; /* สีพื้นหลังอ่อนมาก (เหลืองอ่อนใกล้ขาว) */
+    border-color: #ebe2ca; /* สีขอบของ card (เหลืองเข้ม) */
+}
+
+/* card-danger */
+.card-danger {
+    background-color: #fff8f8; /* สีพื้นหลังอ่อนมาก (แดงอ่อนใกล้ขาว) */
+    border-color: #dc3545; /* สีขอบของ card (แดงเข้ม) */
+}
+
+/* card-orange */
+.card-orange {
+    background-color: #fffdf8; /* สีพื้นหลังอ่อนมาก (ส้มอ่อนใกล้ขาว) */
+    border-color: #ff6600; /* สีขอบของ card (ส้มเข้ม) */
+}
+
+.custom-card , .custom-box{
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.custom-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px rgb(197, 225, 255); /* ฟ้าสดใสที่เด่นขึ้น */
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* เปลี่ยนแปลงด้วยการแปลงที่นุ่ม */
+
+}
+
+.custom-card:active {
+    transform: scale(0.98); /* ขยับเล็กน้อยตอนที่คลิก */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.custom-body::before {
+    content: ""; /* ลบเนื้อหาก่อนหน้านี้ */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;  /* กำหนดขนาดของไอคอน */
+    height: 150px; /* กำหนดขนาดของไอคอน */
+    background-image: url('../file/picture/logo.ico'); /* ใช้ path ที่ถูกต้องไปที่ logo.ico */
+    background-size: contain; /* ทำให้ภาพไม่บิดเบี้ยวและแสดงพอดี */
+    background-repeat: no-repeat; /* ห้ามให้ภาพซ้ำ */
+    background-position: center; /* จัดตำแหน่งให้ภาพอยู่ตรงกลาง */
+    opacity: 0.05; /* ทำให้ภาพโปร่งใส */
+    pointer-events: none; /* ทำให้ไอคอนไม่รบกวนการคลิก */
+    filter: grayscale(100%); /* ทำให้ภาพเป็นขาวดำ */
+}
+
+/* ข้อมูลทั้งหมด */
+.status-badges {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    font-size: 14px;
+    border-radius: 12px;
+    background-color: #ebebeb86;
+    color: #353535;
+    font-weight: 500;
+    min-width: 120px;
+    transition: all 0.2s ease;
+}
+
+/* สถานะพิเศษ */
+.status-badge.bg-info {
+    background-color: #0ea5e9;
+    color: white;
+}
+
+/* สำหรับข้อความยาว */
+p:has(> .status-badge) {
+    margin-bottom: 1rem;
+}
+
+/* Hover effect */
+/* .status-badge:not(.bg-info):hover {
+    background-color: #e0edff;
+    transform: translateY(-1px);
+} */
+
+@media (max-width: 768px) {
+    .modal-detail-content {
+        padding: 1rem;
+    }
+    
+    .status-badge {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.95rem;
+        display: block;
+        width: 100%;
+    }
+    
+    .col-md-6:first-child {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.info-box {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white;
+    position: relative;
+    padding: 5px;
+    /* ปรับเงาให้ดูนูนขึ้น และเพิ่มเงารอบๆ ให้ชัดขึ้น */
+    box-shadow: 
+        0 15px 0 rgba(0, 0, 0, 0.15),   /* เงาด้านล่างเข้มขึ้น */
+        0 5px 80px rgba(0, 0, 0, 0.2), /* เงารอบๆ หนาขึ้น */
+        0 0 20px rgba(0, 0, 0, 0.1);    /* เงากระจายเพิ่มขึ้น */
+    transform: translateY(-8px);        /* ยกขึ้น 8px */
+}
+
+
+
+.info-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+        0 4px 0 rgba(0, 0, 0, 0.1),
+        0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.info-box:active {
+    transform: translateY(0);
+    box-shadow: 
+        0 2px 0 rgba(0, 0, 0, 0.1),
+        0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.info-box-icon {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    font-size: 1.8rem;
+    /* เพิ่ม gradient และ shadow ให้ดูมีมิติ */
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(0,0,0,0.1));
+    box-shadow: 
+        0 4px 0 rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.info-box-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+}

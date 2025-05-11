@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing Links - Christmas Theme</title>
+    <style>
+body {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #4CAF50, #ffffff); /* เปลี่ยนให้มีสีเขียวคริสมาสต์และขาว */
+}
+
+body::before,
+body::after {
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: 1;
+    width: 100%;
+    height: 20%;
+    background: rgba(255, 255, 255, 0.5); /* คลื่นหิมะเป็นสีขาวทึบขึ้น */
+    border-radius: 40%;
+    z-index: -1; /* ทำให้คลื่นอยู่ด้านหลัง */
+}
+
+body::after {
+    top: 85%; /* ปรับตำแหน่งของคลื่นที่สอง */
+    background: rgba(255, 255, 255, 0.6); /* ทำให้คลื่นที่สองดูชัดขึ้นเล็กน้อย */
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #ff4040; /* สีแดงสดเพื่อให้เหมาะกับคริสมาสต์ */
+    text-shadow: 0 0 20px rgba(255, 64, 64, 0.8), 0 0 40px rgba(255, 64, 64, 0.6);
+}
+
+.button {
+    background: linear-gradient(135deg, #ff6f61, #ff4040); /* เปลี่ยนปุ่มให้เป็นสีแดงสด */
+    color: #fff;
+    padding: 15px 30px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 5px 15px rgba(255, 64, 64, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(255, 64, 64, 0.8);
+    background: linear-gradient(135deg, #ff4040, #ff6f61);
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ffeb3b;
+    text-shadow: 0 0 10px rgba(255, 235, 59, 0.7);
+}
+
+.marquee {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: rgba(0, 188, 212, 0.1);
+    color: #ffeb3b;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0, 188, 212, 0.5);
+}
+
+.marquee span {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 2.5rem; }
+    .button { padding: 10px 20px; font-size: 16px; }
+    .content { padding: 15px 20px; }
+}
+
+  /* เกล็ดหิมะ */
+  .snowflake {
+            position: absolute;
+            top: -10px;
+            border-radius: 50%;
+            background-color: white;
+            width: 10px;
+            height: 10px;
+            opacity: 0.8;
+            pointer-events: none;
+            animation: fall 10s linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(100vh) translateX(var(--random-x));
+                opacity: 0.2;
+            }
+        }
+
+        /* ปรับความเร็วและตำแหน่งของเกล็ดหิมะ */
+        .snowflake:nth-child(odd) {
+            animation-duration: 12s;
+        }
+
+        .snowflake:nth-child(even) {
+            animation-duration: 15s;
+        }
+
+         /* สไตล์สำหรับ snowman */
+         .snowman {
+            position: relative;
+            width: 150px;
+            height: 300px;
+        }
+
+        /* วงกลม 3 อันสำหรับ snowman */
+        .snowman .circle {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 5px solid #bbb;
+        }
+
+        /* วงกลมใหญ่สุด */
+        .snowman .circle-1 {
+            top: 0;
+            width: 120px;
+            height: 120px;
+            left: 35px;
+
+        }
+
+        /* วงกลมกลาง */
+        .snowman .circle-2 {
+            top: 90px;
+            width: 150px;
+            height: 150px;
+            left: 20px;
+
+        }
+
+        /* วงกลมเล็กสุด */
+        .snowman .circle-3 {
+            top: 180px;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        /* สไตล์สำหรับตาและปากของ snowman */
+        .eye {
+            position: absolute;
+            background-color: black;
+            border-radius: 50%;
+            width: 20px;
+            height: 15px;
+
+        }
+
+        /* ตาสองข้าง */
+        .eye.left {
+            top: 35px;
+            left: 60px;
+        }
+
+        .eye.right {
+            top: 35px;
+            left: 110px;
+        }
+
+        /* จมูกเป็นแครอท */
+        .nose {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 20px solid orange;
+            top: 60px;
+            left: 85px;
+        }
+
+        /* หมวกของ snowman */
+        .hat {
+            position: absolute;
+            width: 100px;
+            height: 70px;
+            background-color: #333;
+            top: -50px;
+            left: 50px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .hat-brim {
+            position: absolute;
+            width: 140px;
+            height: 20px;
+            background-color: #333;
+            top: 10px;
+            left: 30px;
+        }
+
+        /* สไตล์แขน */
+.arm {
+    position: absolute;
+    background-color: #8B4513; /* สีน้ำตาลสำหรับแขน */
+    width: 10px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* แขนซ้าย */
+.arm-left {
+    top: 60px; /* ปรับตำแหน่งของแขนซ้าย */
+    left: 10px; /* แขนซ้ายจะออกจากซ้ายของตัว snowman */
+    transform: rotate(-45deg); /* ทำให้แขนยื่นออกไปข้างซ้าย */
+}
+
+/* แขนขวา */
+.arm-right {
+    top: 70px; /* ปรับตำแหน่งของแขนขวา */
+    right: -40px; /* แขนขวาจะออกจากขวาของตัว snowman */
+    transform: rotate(45deg); /* ทำให้แขนยื่นออกไปข้างขวา */
+}
+
+
+
+/* มือซ้าย */
+.arm-left .hand {
+    top: 90px;
+    left: -15px;
+}
+
+/* มือขวา */
+.arm-right .hand {
+    top: 90px;
+    right: -15px;
+}
+
+/* สไตล์สำหรับกระดุม */
+.button-snowman {
+    position: absolute;
+    background-color: black; /* สีดำสำหรับกระดุม */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff; /* ขอบขาวเพื่อให้กระดุมดูชัดเจน */
+}
+
+/* กระดุมที่ 1 */
+.button-1 {
+    top: 100px; /* ปรับตำแหน่งให้เหมาะสม */
+    left: 90px;
+}
+
+/* กระดุมที่ 2 */
+.button-2 {
+    top: 130px; /* ปรับตำแหน่งให้เหมาะสม */
+    left: 90px;
+}
+
+/* กระดุมที่ 3 */
+.button-3 {
+    top: 160px; /* ปรับตำแหน่งให้เหมาะสม */
+    left: 90px;
+}
+
+/* สไตล์ของต้นคริสต์มาส */
+.tree {
+    position: relative;
+    width: 0;
+    height: 0;
+    margin: 50px auto;
+}
+
+/* การสร้างใบต้นคริสต์มาส */
+.tree .triangle {
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+
+.tree .triangle-1 {
+    border-bottom: 150px solid #228B22; /* สีเขียวเข้ม */
+    top: -400px;
+    left: 400px;
+
+
+}
+
+.tree .triangle-2 {
+    border-bottom: 120px solid #228B22; /* สีเขียว */
+    top: -475px;
+    left: 400px;
+
+}
+
+/* เปลี่ยนสามเหลี่ยมให้เป็นสามเหลี่ยมเต็ม */
+.tree .triangle-3 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent; /* ขอบด้านซ้ายเป็นโปร่งแสง เพิ่มขนาด */
+    border-right: 150px solid transparent; /* ขอบด้านขวาเป็นโปร่งแสง เพิ่มขนาด */
+    border-bottom: 180px solid #228B22; /* สีเขียวอ่อนที่ด้านล่าง */
+    top: -450px; /* ตำแหน่งสูงสุด */
+    left: 395px; /* กำหนดตำแหน่งด้านซ้าย */
+}
+
+
+
+/* ฐานของต้นคริสต์มาส */
+.tree .trunk {
+    position: absolute;
+    bottom: -30px;
+    left: 400px;
+    width: 50px;
+    height: 80px;
+    background-color: #8B4513; /* สีน้ำตาล */
+    transform: translateX(-50%);
+}
+
+/* ลูกประทีป */
+.tree .ornament {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* เงาสำหรับความมันวาว */
+}
+
+/* ลูกประทีปแต่ละลูกมีสีต่างกัน */
+.tree .ornament-1 { top: -350px; left: 315px; background-color: red; }
+.tree .ornament-2 { top: -120px; left: 300px; background-color: blue; }
+.tree .ornament-4 { top: -280px; left: 320px; background-color: yellow; }
+.tree .ornament-5 { top: -310px; left: 420px; background-color: orange; }
+.tree .ornament-6 { top: -380px; left: 400px; background-color: purple; }
+.tree .ornament-7 { top: -220px; left: 290px; background-color: pink; }
+.tree .ornament-9 { top: -240px; left: 380px; background-color: gold; }
+.tree .ornament-10 { top: -100px; left: 500px; background-color: cyan; }
+.tree .ornament-11 { top: -150px; left: 420px; background-color: magenta; }
+.tree .ornament-14 { top: -220px; left: 490px; background-color: brown; }
+.tree .ornament-15 { top: -300px; left: 500px; background-color: violet; }
+
+
+/* สร้างดาวใหญ่บนยอดต้นคริสต์มาส */
+.tree .star{
+    position: absolute;
+    top: -300px; /* ปรับตำแหน่งดาว */
+    left: 70%;
+    transform: translateX(-50%);
+    width: 60px; /* ขนาดของดาว */
+    height: 60px;
+    background-color: yellow; /* สีของดาว */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* เงาสำหรับความมันวาว */
+    z-index: 2; /* ทำให้ดาวอยู่ด้านบนสุด */
+}
+
+
+/* ลูกบอลที่ตกแต่งบนต้นคริสต์มาส */
+.tree .lights {
+    position: absolute;
+    top: -130px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 10px;
+    background: linear-gradient(to right, #ff0000, #ffcc00, #ff0000);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    z-index: 2; /* ดาวอยู่ด้านบนสุด */
+    box-shadow: 0 0 30px 10px #ffeb3b; /* เงาเรืองแสง */
+    animation: glow 2s infinite ease-in-out; 
+}
+
+.star {
+    position: absolute;
+    top: 200px; /* ตำแหน่งดาว */
+    left: 62.65%; /* ระยะห่างจากด้านซ้าย */
+    width: 300px; /* ขนาดดาว */
+    height: 300px;
+    background-color: #ffeb3b; /* สีดาว */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* เงาสำหรับความมันวาว */
+
+}
+
+.gift {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #f00; /* สีของกล่อง */
+    border-radius: 5px; /* ทำมุมโค้งเล็กน้อย */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* เพิ่มเงา */
+}
+
+/* ริบบิ้นบนกล่อง */
+.gift-ribbon-horizontal {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: gold;
+    top: 45px;
+    left: 0;
+}
+
+.gift-ribbon-vertical {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: gold;
+    top: 0;
+    left: 45px;
+}
+
+.snow-pile {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    /* ขนาดสามารถปรับเปลี่ยนได้ */
+    width: 50px;
+    height: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    /* สามารถเปลี่ยนตำแหน่งได้ */
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+/* พื้นหลังของพื้นที่คลิก */
+.click-area {
+    width: 200px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+
+
+
+/* เอฟเฟกต์การระเบิด */
+@keyframes firework-animation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(4);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.tv-screen {
+            width: 80%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 20px solid #000;
+            border-radius: 10px;
+            background-color: #222;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            position: relative;
+            overflow: hidden;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Screen effect (black border) */
+        .tv-screen:before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 10px solid #333;
+            border-radius: 15px;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Video iframe to fit within TV screen */
+        .tv-screen iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>🎄 Merry Christmas! 🎄</h1>
+        <p> ❄️ ❄️ ❄️ ❄️ ❄️</p>
+        <div>
+            <a href="https://docs.google.com/document/d/1N7Cdy39DnFvLFwrUUguOYYXS_OTF0QKVMlPVGdcMMKE/edit?usp=sharing" class="button" target="_blank">💬 คุยงาน</a>
+        </div>
+        <div>
+            <button class="button" onclick="copyToClipboard()">📋 คัดลอกที่อยู่ไฟล์</button>
+        </div>
+        <div>
+            <a href="https://chatbypnw.web.app/#" class="button" target="_blank">💬 คุยพิเศษ</a>
+        </div>
+        <div>
+            <a href="" class="button" target="_blank">เกม</a>
+        </div>
+
+
+    <div class="snowman">
+        <!-- วงกลมสามอัน -->
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+
+        <!-- ตา -->
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+
+        <!-- จมูก -->
+        <div class="nose"></div>
+
+        <!-- หมวก -->
+        <div class="hat"></div>
+        <div class="hat-brim"></div>
+
+        <!-- แขน -->
+    <div class="arm arm-left">
+        <div class="hand"></div>
+    </div>
+    <div class="arm arm-right">
+        <div class="hand"></div>
+    </div>
+
+      <!-- กระดุม -->
+      <div class="button-snowman button-1"></div>
+      <div class="button-snowman button-2"></div>
+      <div class="button-snowman button-3"></div>
+
+    </div>
+
+    <div class="tree">
+        <!-- ใบของต้นคริสต์มาส -->
+        <div class="triangle triangle-1"></div>
+        <div class="triangle triangle-2"></div>
+        <div class="triangle triangle-3"></div>
+    
+        <!-- ฐานต้นคริสต์มาส -->
+        <div class="trunk"></div>
+    
+        <!-- ลูกประทีป -->
+    <a href="https://th.y8.com/games/2_player_dino_run" target="_blank">
+        <div class="ornament ornament-1"></div>
+    </a>
+        <div class="ornament ornament-2"></div>
+        <div class="ornament ornament-3"></div>
+        <div class="ornament ornament-4"></div>
+        <div class="ornament ornament-5"></div>
+        <div class="ornament ornament-6"></div>
+        <div class="ornament ornament-7"></div>
+        <div class="ornament ornament-9"></div>
+        <div class="ornament ornament-10"></div>
+        <div class="ornament ornament-11"></div>
+        <div class="ornament ornament-14"></div>
+        <div class="ornament ornament-15"></div>
+    </div>
+    <div class="star"></div>
+
+    <a href="https://www.agar.io" target="_blank">
+        <div class="gift" style="top: 800px; left: 1400px;">
+            <div class="gift-ribbon-horizontal"></div>
+            <div class="gift-ribbon-vertical"></div>
+        </div>
+    </a>
+    
+    <a href="https://th.y8.com/" target="_blank">
+        <div class="gift" style="top: 820px; left: 1230px; background-color: #00f;">
+            <div class="gift-ribbon-horizontal"></div>
+            <div class="gift-ribbon-vertical"></div>
+        </div>
+    </a>
+    
+
+    <div class="snow-pile" style="top: -100px; left: -55%; width: 60px; height: 15px; box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); transform: rotate(-55deg);"></div>
+    <div class="snow-pile" style="top: -200px; left: 242px; width: 70px; height: 15px; transform: rotate(49deg);"></div>
+    <div class="snow-pile" style="top: -300px; left: 1%; width: 30px; height: 10px; transform: rotate(-50deg);"></div>
+
+        
+
+
+
+
+
+
+
+</div>
+
+
+
+    <!-- Snowflakes -->
+    <script>
+
+        function copyToClipboard() {
+            const networkPath = "\\\\172.17.33.22";
+            navigator.clipboard.writeText(networkPath).then(() => {
+                alert('✅ คัดลอกที่อยู่แล้ว!');
+            });
+        }
+
+               // สร้างเกล็ดหิมะสุ่ม
+               function createSnowflakes() {
+            const numberOfSnowflakes = 100; // จำนวนเกล็ดหิมะที่ตก
+            for (let i = 0; i < numberOfSnowflakes; i++) {
+                const snowflake = document.createElement("div");
+                snowflake.classList.add("snowflake");
+
+                // สุ่มตำแหน่งเริ่มต้นของเกล็ดหิมะ
+                snowflake.style.left = `${Math.random() * 100}vw`; // สุ่มตำแหน่งแนวนอน
+                snowflake.style.animationDuration = `${Math.random() * 5 + 10}s`; // ความเร็วการตก
+                snowflake.style.animationDelay = `${Math.random() * 5}s`; // เวลาหน่วง
+
+                // สุ่มการเคลื่อนที่ในแนวนอน
+                const randomX = Math.random() * 100 - 50; // ค่า X แบบสุ่ม
+                snowflake.style.setProperty('--random-x', `${randomX}vw`);
+
+                document.body.appendChild(snowflake);
+            }
+        }
+
+        
+        // เรียกใช้ฟังก์ชัน
+        createSnowflakes();
+    </script>
+</body>
+</html>

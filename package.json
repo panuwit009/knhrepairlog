@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chart.js": "^3.9.1",
+    "chartjs-plugin-datalabels": "^2.0.0",
+    "lucide-react": "^0.473.0",
+    "recharts": "^2.15.0"
+  }
+}

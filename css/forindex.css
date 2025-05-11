@@ -1,0 +1,135 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(244, 246, 249);
+  }
+
+  .container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px; 
+    max-width: 1600px;
+    box-shadow: 
+        0 4px 80px rgba(0, 0, 0, 0.05),  /* เงาเลเยอร์แรก */
+        0 40px 40px rgba(0, 0, 0, 0.03);  /* เงาเลเยอร์ที่สอง (ยิ่งทำให้ดูมีมิติ) */
+    border: 0px solid #000000;
+}
+
+.header-wrapper {
+    position: absolute; /* วางทับบน container */
+    top: -45px; /* ยกขึ้นจาก container */
+    left: 50%; /* จัดให้อยู่กึ่งกลาง */
+    transform: translateX(-50%); /* ปรับให้อยู่กลาง container */
+    background-color: #f7f7f7; /* พื้นหลังสีเดียวกับ container */
+    padding: 15px 1px; /* ระยะห่างรอบข้อความ */
+    z-index: 10; /* ให้อยู่เหนือ container */
+}
+
+
+
+@media (max-width: 1200px) {
+    .header-wrapper {
+        top: -20px; /* ลดการยกขึ้นเพื่อลดการกินพื้นที่ */
+        padding: 1px 1px; /* ลด padding ให้เหมาะสมกับหน้าจอเล็ก */
+    }
+    .custom-h1 {
+        font-size: 30px; /* ลดขนาดตัวอักษร */
+    }
+}
+/* ปรับสำหรับหน้าจอเล็ก */
+@media (max-width: 768px) {
+    .header-wrapper {
+        top: -20px; /* ลดการยกขึ้นเพื่อลดการกินพื้นที่ */
+        padding: 1px 1px; /* ลด padding ให้เหมาะสมกับหน้าจอเล็ก */
+    }
+    .custom-h1 {
+        width: 300px;
+        font-size: 30px; /* ลดขนาดตัวอักษร */
+    }
+}
+
+/* ปรับสำหรับหน้าจอเล็ก */
+@media (max-width: 500px) {
+    .header-wrapper {
+        top: -20px; /* ลดการยกขึ้นเพื่อลดการกินพื้นที่ */
+        padding: 1px 1px; /* ลด padding ให้เหมาะสมกับหน้าจอเล็ก */
+    }
+    .custom-h1 {
+        width: 300px;
+        font-size: 30px; /* ลดขนาดตัวอักษร */
+    }
+}
+
+/* ปรับสำหรับหน้าจอมือถือขนาดเล็กมาก */
+@media (max-width: 480px) {
+    .header-wrapper {
+        top: -16px;
+        padding: 0px 1px;
+    }
+    .custom-h1 {
+        font-size: 30px;
+    }
+}
+
+button:hover {
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+}
+  
+button:active {
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+.wrapper {
+    background-color: #f4f6f9;
+}
+
+
+/* Header Styling */
+.header-wrapper {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 15px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    z-index: 10;
+}
+
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #4a90e2;
+    border: none;
+}
+
+.btn-secondary {
+    background: #d8d8d8;
+    border: none;
+    color: #4e4e4e;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ------------------------------------------ */
+
+.input-white {
+    background-color: #fff !important;
+  }

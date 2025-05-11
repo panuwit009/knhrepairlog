@@ -1,0 +1,70 @@
+
+/*  ตกแต่งเอง */
+.container-input {
+    border-radius: 10px;
+    max-width: 1800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(95, 97, 185, 0.1);
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.custom-label {
+    margin-top: 12px;
+    white-space: nowrap; /* Prevents the label from wrapping */
+    text-align: right;
+}
+
+.number-input, .date-input {
+    width: 150px;
+    margin-right: 12px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.number-input:focus {
+    border-color: transparent;
+    box-shadow: 0 0 5px 2px rgba(58, 183, 255, 0.568);
+    outline: none;
+}
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.number-input::-ms-clear {
+    display: none;
+}
+
+.input-group {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment of label and input */
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Allows for wrapping if there's not enough space */
+}
+
+.input-group label {
+    margin-right: 10px;
+    min-width: 120px; /* Ensures labels have a fixed width */
+}
+
+.input-group input {
+    margin-right: 20px; /* Ensures spacing between inputs */
+}
+
+.date-input {
+    display: inline-block;
+}
+
+span {
+    display: inline-block;
+    margin-top: 10px;
+}

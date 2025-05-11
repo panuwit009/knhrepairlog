@@ -1,0 +1,41 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+.card-content {
+    font-size: 1em;
+    margin-bottom: 4px;
+}
+.male {
+    background-color: #b3e5fc; /* สีฟ้า */
+}
+.female {
+    background-color: #f8bbd0; /* สีชมพู */
+}
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* เพิ่มความสูงเพื่อระยะห่างจากขอบบน */
+}
+h2 {
+    font-size: 2em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}

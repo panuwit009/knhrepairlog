@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn-primary {
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #f1f8e9;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+.container {
+    width: 100%; 
+    max-width: 1050px;
+    margin: 20px auto; /* มี margin ด้านบนและด้านล่าง 20px */
+    margin-top: 60px; /* เพิ่มระยะห่างด้านบนมากขึ้น */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(95, 97, 185, 0.1);
+    border: 1px solid black; /* เพิ่มกรอบสีดำ */
+    position: relative; /* กำหนดตำแหน่งให้เป็น relative */
+}
+
+.logo {
+    position: absolute; /* ใช้ตำแหน่งแบบ absolute เพื่อให้สามารถจัดตำแหน่งได้ */
+    top: -50px; /* ปรับระยะห่างจากด้านบนเป็นค่าติดลบ */
+    left: 30px; /* ระยะห่างจากด้านซ้าย */
+    z-index: 10; /* เพื่อให้โลโก้อยู่ด้านบนสุด */
+}
+
+.logo img {
+    width: 100px; /* กำหนดขนาดโลโก้ */
+    height: auto; /* รักษาสัดส่วนของโลโก้ */
+}
+
+
+
+.input-group {
+    display: flex; 
+    align-items: center;
+    font-size: 16px;
+}
+
+.input-group input[type="text"], 
+.input-group input[type="number"]{
+    width: 80px; /* ปรับขนาดช่องกรอก */
+    margin: 0 12px; /* ช่องว่างระหว่างตัวอักษรกับช่องกรอก */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.input-group input[type="text"] + span, 
+.input-group input[type="number"] + span {
+    margin-left: 2px; /* ระยะห่างจากช่องกรอกไปยังหน่วย */
+}
+
+
+.input-group span {
+    margin: 0 50px; /* ระยะห่างของหน่วย */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.col {
+    flex: 1;
+    padding: 2px;
+}
+
+label {
+    display: block;
+    /* margin-bottom: 10px; */
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="date"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+    
+.extra-input {
+    margin-left: 10px;
+    display: none; /* ซ่อนช่องกรอกข้อมูลเริ่มต้น */
+    font-family: 'Kanit', sans-serif; /* ใช้ฟอนต์ Kanit */
+    width: 150px;
+    height: 40px;
+    border: 2px solid transparent; /* กำหนดสีขอบเริ่มต้นเป็นโปร่งใส */
+    transition: border-color 0.3s, box-shadow 0.3s; /* เพิ่มการเปลี่ยนสีขอบและเงาให้ดูนุ่มนวล */
+}
+
+.extra-input:focus {
+    border-color: transparent; /* ทำให้ขอบโปร่งใส */
+    box-shadow: 0 0 5px 2px rgba(58, 183, 255, 0.568); /* สร้างเงาสีฟ้ารอบๆ ฟิลด์กรอกข้อมูล */
+    outline: none; /* ลบกรอบที่เบลอออก */
+}
+
+.short-input {
+    font-family: 'Kanit', sans-serif; /* ใช้ฟอนต์ Kanit */
+    width: 200px;
+    height: 40px;
+    border: 2px solid transparent; /* กำหนดสีขอบเริ่มต้นเป็นโปร่งใส */
+    transition: border-color 0.3s, box-shadow 0.3s; /* เพิ่มการเปลี่ยนสีขอบและเงาให้ดูนุ่มนวล */
+}
+
+.short-input:focus {
+    border-color: transparent; /* ทำให้ขอบโปร่งใส */
+    box-shadow: 0 0 5px 2px rgba(58, 183, 255, 0.568); /* สร้างเงาสีฟ้ารอบๆ ฟิลด์กรอกข้อมูล */
+    outline: none; /* ลบกรอบที่เบลอออก */
+}
+
+.form-check-input {
+    margin-left: 15px;
+    margin-right: 10px; /* เพิ่มระยะห่าง 2px ระหว่าง checkbox กับข้อความ */
+
+}
+
+.checkbox-spacing {
+    margin-top: 15px; /* ปรับระยะห่างตามต้องการ */
+}
+
+.form-check-home-advice {
+    /* background-color: #f9f9f9
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; */
+    margin-bottom: 10px;
+}
+
+
+.form-check-home-advice .form-check-input {
+    margin-right: 4px;
+}
+
+.label-margin {
+    margin: 0 10px;
+}
+
+.custom-input {
+    font-family: 'Kanit', sans-serif; /* ใช้ฟอนต์ Kanit */
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid transparent; /* กำหนดสีขอบเริ่มต้นเป็นโปร่งใส */
+    transition: border-color 0.3s, box-shadow 0.3s; /* เพิ่มการเปลี่ยนสีขอบและเงาให้ดูนุ่มนวล */
+    }
+
+.custom-input:focus {
+border-color: transparent; /* ทำให้ขอบโปร่งใส */
+box-shadow: 0 0 5px 2px rgba(58, 183, 255, 0.568); /* สร้างเงาสีฟ้ารอบๆ ฟิลด์กรอกข้อมูล */
+outline: none; /* ลบกรอบที่เบลอออก */
+}
+
+.custom-label {
+    margin-bottom: 10px;
+}

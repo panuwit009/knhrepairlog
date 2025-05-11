@@ -1,0 +1,46 @@
+        body {
+            font-family: 'Kanit', sans-serif;
+            background: #f5f7fa;
+        }
+        .bg-light-green {
+            background: linear-gradient(135deg, #c5e1a5 0%, #aed581 100%);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .dashboard-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+        }
+        table {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .ward-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            backdrop-filter: blur(8px);
+        }
+        .custom-body::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;  /* ลดขนาดโลโก้พื้นหลัง */
+            height: 200px;
+            background-image: url('logo.ico'); /* ตรวจสอบ path ให้ถูกต้อง */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.1;
+            pointer-events: none;
+            filter: grayscale(0%);
+          }
+          
+          /* เพิ่ม text-shadow ให้กับข้อความ */
+          h1, p {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+          }
+          

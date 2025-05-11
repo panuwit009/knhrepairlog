@@ -1,0 +1,226 @@
+.small-box {
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.small-box:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* เพิ่ม style สำหรับ change indicator */
+.change-indicator {
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+.change-positive { color: #a3e635; }
+.change-negative { color: #ef4444; }
+.small-box {
+    border-radius: 8px;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+}
+.bg-info { background-color: #17a2b8; color: white; }
+.bg-success { background-color: #28a745; color: white; }
+.bg-warning { background-color: #ffc107; color: white; }
+
+.chart-legend {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.chart-legend li {
+    padding: 5px 0;
+}
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.875rem;
+}
+.status-0 { background-color: #dc3545; color: white; }
+.status-1 { background-color: #ffc107; color: white; }
+.status-2 { background-color: #fd7e14; color: white; }
+.status-3 { background-color: #fd7e14; color: white; }
+.status-4 { background-color: #28a745; color: white; }
+.status-5 { background-color: #28a745; color: white; }
+
+.form-select {
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+}
+
+.form-select:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.container {
+    border-radius: 16px;
+    max-width: 100%;
+    width: 1500px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+        
+/* ขอบชัดเจนและสีพื้นหลังที่สะอาด */
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6; /* ขอบที่คมชัด */
+}
+
+/* เพิ่มสีพื้นหลังเมื่อ hover */
+.table-hover tbody tr:hover {
+    background-color: #838383; /* สีพื้นหลังเมื่อ hover */
+}
+
+.table th, .table td {
+    padding: 12px 15px; /* เพิ่มความห่างระหว่างตัวอักษร */
+    font-size: 16px;
+    color: #495057; /* เปลี่ยนสีข้อความให้เข้มขึ้น */
+}
+
+.table tbody tr:hover td {
+    color: #ffffff; /* สีตัวอักษรเป็นขาว */
+}
+
+
+/* กำหนดให้ข้อความในตารางหักบรรทัดเมื่อยาวเกินไป */
+table td {
+    word-break: break-word; /* ใช้ break-word เพื่อให้ข้อความยาวหักบรรทัดใหม่ */
+    white-space: normal; /* ทำให้ข้อความไม่ถูกตัดในบรรทัดเดียว */
+}
+
+/* เพิ่มเงาให้ตาราง */
+.card-body .table-responsive {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+    border-radius: 8px; /* ขอบมน */
+    overflow-x: auto; /* ให้เลื่อนด้านข้างได้ */
+}
+
+/* ทำให้หัวตารางสวยขึ้น */
+.thead-light th {
+    background-color: #f7f7f7; /* สีพื้นหลังหัวตาราง */
+    color: #6c757d; /* สีข้อความอ่อนๆ */
+}
+
+/* ขนาดตัวอักษรหัวตาราง */
+.table th {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#pagination .btn {
+    margin: 0 2px;  /* เพิ่มระยะห่างระหว่างปุ่ม */
+    padding: 5px 10px; /* ปรับขนาดปุ่มให้ใหญ่ขึ้น */
+    font-size: 16px;   /* ปรับขนาดตัวอักษร */
+}
+
+#pagination .btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+#pagination .btn:focus {
+    outline: none;
+}
+
+#pagination .pagination-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.form-control {
+    background-color: #fff !important;
+    border: 1px solid #ced4da;
+}
+
+/* ถ้าต้องการให้ input เป็นสีขาวแม้ในสถานะ readonly */
+.form-control[readonly] {
+    background-color: #fff !important;
+}
+
+.flatpickr-calendar {
+    transform: translateX(-90px) !important; /* ขยับซ้าย 20px จากตำแหน่งเดิม */
+}
+
+/* การเคลื่อนไหวและแสงไฟให้กับหัวข้อ */
+.animated-title {
+    font-size: 3.5rem; /* ขยายขนาดตัวอักษร */
+    color: #007bff; /* สีฟ้า */
+}
+
+/* การเคลื่อนไหวเบาๆ สำหรับ subtitle */
+.animated-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d; /* สีเทา */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Keyframe สำหรับการเคลื่อนไหวของแสงไฟ */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 123, 255, 0.8), 0 0 20px rgba(0, 123, 255, 0.6);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(0, 123, 255, 1), 0 0 30px rgba(0, 123, 255, 0.8);
+    }
+}
+
+/* Keyframe สำหรับการเคลื่อนไหวของ subtitle */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#equipmentChart {
+    width: 100px;
+    height: 100px;
+    margin: 0; /* เอา margin: auto ออกเพื่อให้กราฟชิดซ้าย */
+}
+
+.chart-responsive {
+    display: flex;
+    align-items: flex-start;
+    gap: 0; /* ไม่เว้นช่องว่างระหว่างกราฟกับ legend */
+    justify-content: flex-start; /* จัดให้เริ่มจากซ้าย */
+}
+
+.chart-container {
+    flex: 0 0 auto;
+    width: 400px; /* กำหนดขนาดตามกราฟ */
+}
+
+.chart-legend {
+    flex: 0 0 auto;
+    padding-left: 5px; /* ระยะห่างจากกราฟเล็กน้อย */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.legend-item i {
+    margin-right: 8px;
+}
+
+.legend-item span {
+    font-size: 1rem;
+}
+
+.fullscreen {
+    display: flex;
+    justify-content: center;  /* จัดตรงกลางแนวนอน */
+    align-items: center;      /* จัดตรงกลางแนวตั้ง */
+}
+
